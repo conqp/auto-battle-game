@@ -24,6 +24,6 @@ public class Character {
     }
 
     public String toString() {
-        return format("%s(name = %s, xp = %d)", this.getClass().getSimpleName(), name, xp);
+        return format("%s %s currently has %d XP", this.getClass().getSimpleName(), name, xp);
     }
 }
