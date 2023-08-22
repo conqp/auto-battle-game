@@ -1,5 +1,6 @@
 package org.example;
 import static java.lang.Math.max;
+import static java.lang.String.format;
 
 public class Character {
     private final String name;
@@ -23,6 +24,6 @@ public class Character {
     }
 
     public String toString() {
-        return String.format("%s(name = %s, xp = %d)", this.getClass().getSimpleName(), name, xp);
+        return format("%s(name = %s, xp = %d)", this.getClass().getSimpleName(), name, xp);
     }
 }
