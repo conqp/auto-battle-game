@@ -2,7 +2,7 @@ package org.example;
 import static java.lang.Math.max;
 import static java.lang.String.format;
 
-public class Character {
+public class Character implements Combatant {
     private final String name;
     private Integer xp;
 
@@ -15,6 +15,7 @@ public class Character {
         return name;
     }
 
+    @Override
     public int getXp() {
         return xp;
     }
