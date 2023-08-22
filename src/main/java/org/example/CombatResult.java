@@ -1,7 +1,6 @@
 package org.example;
 
-public enum CombatResult
-{
+public enum CombatResult {
     Won,
     Lost,
 }

@@ -8,5 +8,6 @@ public interface Combatant {
 
         return CombatResult.Lost;
     }
+
     int getXp();
 }

@@ -1,4 +1,5 @@
 package org.example;
+
 import static java.lang.Math.max;
 import static java.lang.String.format;
 
@@ -8,7 +9,7 @@ public class Character implements Combatant {
 
     public Character(String name) {
         this.name = name;
-        this.xp = 0;
+        xp = 0;
     }
 
     public String getName() {
@@ -25,6 +26,6 @@ public class Character implements Combatant {
     }
 
     public String toString() {
-        return format("%s %s currently has %d XP", this.getClass().getSimpleName(), getName(), getXp());
+        return format("%s %s currently has %d XP", getClass().getSimpleName(), getName(), getXp());
     }
 }
