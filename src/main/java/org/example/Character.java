@@ -9,7 +9,7 @@ public class Character implements Combatant {
 
     public Character(String name, int xp) {
         this.name = name;
-        this.xp = xp;
+        this.xp = max(xp, 0);
     }
 
     public Character(String name) {
