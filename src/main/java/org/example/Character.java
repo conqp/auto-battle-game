@@ -12,10 +12,6 @@ public class Character implements Combatant {
         this.xp = max(xp, 0);
     }
 
-    public Character(String name) {
-        this(name, 0);
-    }
-
     public String getName() {
         return name;
     }
