@@ -9,6 +9,6 @@ public class Main {
         link.gainXp(42);
         System.out.println(link);
         CombatResult result = link.combat(acheman);
-        System.out.printf("%s %s %s %s%n", link.getName(), (result == CombatResult.Won) ? "won" : "lost", "against", acheman.getName());
+        System.out.printf("%s %s %s %s%n", link.getName(), result, "against", acheman.getName());
     }
 }
