@@ -7,9 +7,13 @@ public class Character implements Combatant {
     private final String name;
     private Integer xp;
 
-    public Character(String name) {
+    public Character(String name, int xp) {
         this.name = name;
-        xp = 0;
+        this.xp = xp;
+    }
+
+    public Character(String name) {
+        this(name, 0);
     }
 
     public String getName() {
