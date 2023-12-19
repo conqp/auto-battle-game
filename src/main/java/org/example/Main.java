@@ -17,5 +17,7 @@ public class Main {
 
         CombatOutcome result = link.combat(acheman, 12);
         System.out.printf("%s %s %s %s\n", link.getName(), result, "against", acheman.getName());
+        System.out.println(acheman);
+        System.out.println(link);
     }
 }
