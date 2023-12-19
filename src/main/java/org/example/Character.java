@@ -16,7 +16,6 @@ public class Character implements Combatant {
         return name;
     }
 
-    @Override
     public int getXp() {
         return xp;
     }
