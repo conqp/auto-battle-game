@@ -1,12 +1,12 @@
 package org.example;
 
 public interface Combatant {
-    default CombatResult combat(Combatant other) {
+    default CombatOutcome combat(Combatant other) {
         if (getXp() > other.getXp()) {
-            return CombatResult.Won;
+            return CombatOutcome.Won;
         }
 
-        return CombatResult.Lost;
+        return CombatOutcome.Lost;
     }
 
     int getXp();

@@ -15,7 +15,7 @@ public class Main {
         link.gainXp(random.nextInt(0, 100));
         System.out.println(link);
 
-        CombatResult result = link.combat(acheman);
+        CombatOutcome result = link.combat(acheman);
         System.out.printf("%s %s %s %s\n", link.getName(), result, "against", acheman.getName());
     }
 }
