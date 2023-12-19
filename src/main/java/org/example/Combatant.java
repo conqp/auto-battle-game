@@ -6,6 +6,10 @@ public interface Combatant {
             return CombatOutcome.Won;
         }
 
+        if (getXp() == other.getXp()) {
+            return CombatOutcome.Draw;
+        }
+
         return CombatOutcome.Lost;
     }
 
