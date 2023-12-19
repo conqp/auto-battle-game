@@ -3,9 +3,9 @@ package org.example;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
-    public static void main(String[] args) {
-        ThreadLocalRandom random = ThreadLocalRandom.current();
+    private static final ThreadLocalRandom random = ThreadLocalRandom.current();
 
+    public static void main(String[] args) {
         Character link = new Character("Link", random.nextInt(0, 100));
         System.out.println(link);
 
@@ -14,7 +14,7 @@ public class Main {
 
         link.gainXp(random.nextInt(0, 100));
         System.out.println(link);
-        
+
         CombatResult result = link.combat(acheman);
         System.out.printf("%s %s %s %s\n", link.getName(), result, "against", acheman.getName());
     }
